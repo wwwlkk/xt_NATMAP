@@ -1,7 +1,7 @@
-#KVER   ?= $(shell uname -r)
+KVER   ?= $(shell uname -r)
 #KVER   ?= 4.4.32+
-#KDIR   ?= /lib/modules/$(KVER)/build/
-KDIR   ?= /usr/src/linux/
+KDIR   ?= /lib/modules/$(KVER)/build/
+#KDIR   ?= /usr/src/linux/
 DEPMOD  = /sbin/depmod -a
 CC     ?= gcc
 obj-m   = xt_NATMAP.o
